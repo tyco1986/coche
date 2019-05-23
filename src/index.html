@@ -8,17 +8,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Share Your Car!</title>
 
     <style type="text/css">
+
+
       body {
-        background-color: #7f45f1;}
-        .container {
-          width: 100%;
-        }
+        display: block;
+        margin: 0;
+        padding: 0;}
+
+      section {
+        width: 100%;
+        min-height: 1200px;}
+
+      .wave {
+        position: relative;
+        background: linear-gradient(90deg, #a884f0, #661df7);}
+
+      .wave:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 430px;
+        background: url(wave.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+
+      .container {
+        width: 100%;}
 
       .nav .nav-item .nav-link {
-        font-size: 16px;
+        font-size: 18px;
         font-family: calibri;
         color:#fff;}
 
@@ -26,14 +51,15 @@
         background-color: #7f45f1;}
 
       .navbar-brand .logo {
-        border-radius: 100%; }
+        border-radius: 100%;}
 
       .tex-white {
+        letter-spacing: 0.05em;
         line-height: 1em;
         font-size: 80px;
         font-family: calibri;
         color:#fff;
-        font-weight: bold; }
+        font-weight: bold;}
 
       .tex-white2 {
         line-height: 1.5em;
@@ -41,67 +67,182 @@
         font-family: calibri;
         color:#fff;}
 
-      .caja {
-        height: 200px;
-      }
+      .button1 {
+        margin-top:300px;
+        margin-left:30px;
+        border-radius:50px;
+        border-color: #591bd6;
+        background-color:#591bd6;
+        width: 235px;
+        height: 80px;
+        font-weight: bold;}
+
+      .button2 {
+        margin-top:30px;
+        border-radius:50px;
+        border-color: #591bd6;
+        background-color:#591bd6;
+        width: 370px;
+        height: 80px;
+        font-weight: bold;}
+
+      .persons {
+        margin-top: 150px;
+        margin-left: 70px;}
 
     </style>
 
 
   </head>
   <body>
-<div class="container-fluid">
 
-<!--NAVBAR-->
-  <div class="navbar navbar-light pt-5 ">
-    <div class="col-1"></div>
-    <div class="pl-5 col-2">
-      <a class="navbar-brand" href="#">
-        <img src="brand2.jpg" width="50" height="50" alt="" class= "logo">
-      </a>
-    </div>
-    <div class="pl-5 col-6">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Vehicle loans</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">others Loans</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Location</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">How it works</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-3"></div>
-    <div class= "pt-5 tex-white col-5">
-      Turn Your Vehicle <br> into Cash!
-    </div>
-  </div>
-</div>
+    <section class="wave">
+      <div class="container-fluid">
 
-<div class="">
-  <div class="row" style="height: 500px;">
-    <div class="col-3"></div>
-    <div class= "pt-5 tex-white2 col-3">
-      Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!
-    </div>
-    <div>
-      <img src="audi.png" class= "col-6 w-50 float-right">
-    </div>
-  </div>
-</div>
+      <!--NAVBAR-->
+        <div class="navbar navbar-light pt-5 ">
+          <div class="col-1"></div>
+          <div class="pl-5 col-2" style="margin-left: 50px;">
+            <a class="navbar-brand" href="#">
+              <img src="brand2.jpg" width="50" height="50" alt="" class= "logo">
+            </a>
+          </div>
+          <div class="pl-5 col-6">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vehicle loans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">others Loans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it works</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class= "pt-5 tex-white col-5">
+            Turn Your Vehicle <br> into Cash!
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="" style="height: 500px; margin-left: 480px;">
+          <div class="col-3"></div>
+          <div class= "pt-5 tex-white2 col-3">
+            Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!
+          </div>
+          <div class="" style="margin-top:-200px; margin-left:-400px;">
+            <img src="audi.png" class= "w-50 float-right">
+          </div>
+          <div>
+            <button type="button" class="button1 btn btn-primary btn-lg" style="margin-left:-4px;">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-8" style="margin-top:-280px; margin-left:-30px;">
+        <div class="" style="font-size: 80px; font-weight:bold; padding-left: 500px;">
+          2000+
+        </div>
+        <div style="font-size: 30px; font-weight:bold; padding-left: 500px;">
+          Happy customers
+        </div>
+        <div class="persons">
+          <img src="persons.jpg"  class= "" style="margin-left:380px; margin-top:-110px; width:500px;">
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="form1 col-3 " style="margin-top:-590px; margin-left:1000px; background: white; border-radius: 25% 10% 10% 10%; width:500px; box-shadow: 17px 14px 5px 0px rgba(0,0,0,0.24);">
+        <form style="padding-left: 50px; padding-top: 5px;">
+          <div class="font-weight-bold" style="font-size: 24px; margin-left: 34px; margin-top: 60px;">
+            How much<a style="color:#7f45f1;"> cash can i get?</a>
+          </div>
+          <div class="form-group row pt-5">
+            <div class="col-10">
+              <input type="name" class="form-control" id="inputEmail3" placeholder="Name" style="width:370px; height:60px; background-color: #ebebeb;">
+            </div>
+          </div>
+          <div class="form-group row pt-2">
+            <div class="col-10">
+              <input type="email" class="form-control" id="inputPassword3" placeholder="E-mail" style="width:370px; height:60px; background-color: #ebebeb;">
+            </div>
+          </div>
+          <div class="form-group row pt-2">
+            <div class="col-5">
+              <input type="email" class="form-control" id="inputPassword3" placeholder="Make" style="width:180px; height:60px; background-color: #ebebeb;">
+            </div>
+            <div class="col-5 pl-4">
+              <input type="email" class="form-control" id="inputPassword3" placeholder="Model" style="width:180px; height:60px; background-color: #ebebeb;">
+            </div>
+          </div>
+          <fieldset class="form-group row pt-2">
+              <div class="col-sm-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Brisbane</label>
+                </div>
+                <div class="form-check form-check-inline" style="margin-left: 45px;">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Gold Coast</label>
+                </div>
+                <div class="form-check form-check-inline" style="margin-left: 45px;">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3">Sydney</label>
+                </div>
+              </div>
+          </fieldset>
+          <div class="form-group row pb-5">
+            <div class="col-sm-10">
+              <button type="button" class="button2 btn btn-primary btn-lg">Free Evaluation</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
 
 
 
