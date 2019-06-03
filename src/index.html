@@ -12,20 +12,16 @@
 
     <style type="text/css">
 
-
       body {
         display: block;
         margin: 0;
-        padding: 0;}
-
-      section {
-        width: 100%;
-        min-height: 1200px;}
-
+        padding: 0;
+      }
       .wave {
         position: relative;
-        background: linear-gradient(90deg, #a884f0, #661df7);}
+        background: linear-gradient(90deg, #a884f0, #661df7);
 
+      }
       .wave:before {
         content: '';
         position: absolute;
@@ -33,38 +29,39 @@
         left: 0;
         width: 100%;
         height: 430px;
-        background: url(wave.png);
-        background-size: cover;
-        background-repeat: no-repeat;}
-
+        background: url(./images/wave.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
       .container {
-        width: 100%;}
-
+        width: 100%;
+      }
       .nav .nav-item .nav-link {
         font-size: 18px;
         font-family: calibri;
-        color:#fff;}
-
+        color:#fff;
+      }
       .navbar .navbar-light {
-        background-color: #7f45f1;}
-
+        background-color: #7f45f1;
+      }
       .navbar-brand .logo {
-        border-radius: 100%;}
-
+        border-radius: 100%;
+      }
       .tex-white {
         letter-spacing: 0.05em;
         line-height: 1em;
         font-size: 80px;
         font-family: calibri;
         color:#fff;
-        font-weight: bold;}
-
+        font-weight: bold;
+      }
       .tex-white2 {
         line-height: 1.5em;
         font-size: 26px;
         font-family: calibri;
-        color:#fff;}
-
+        color:#fff;
+      }
       .button1 {
         margin-top:300px;
         margin-left:30px;
@@ -73,8 +70,8 @@
         background-color:#591bd6;
         width: 235px;
         height: 80px;
-        font-weight: bold;}
-
+        font-weight: bold;
+      }
       .button2 {
         margin-top:30px;
         border-radius:50px;
@@ -82,366 +79,144 @@
         background-color:#591bd6;
         width: 370px;
         height: 80px;
-        font-weight: bold;}
-
+        font-weight: bold;
+      }
       .persons {
         margin-top: 150px;
-        margin-left: 70px;}
-
+        margin-left: 70px;
+      }
       .wavegreen{
-
         margin-top:150px;
-        background: url(wave2.png);
+        background: url(./images/wave2.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 800px;}
-
+        height: 800px;
+      }
       div.border1 {
         border-left: 20px solid #8553f2;
         border-radius: 0%;
-        position: relative;}
-
+        position: relative;
+      }
       div.border1:before {
         position: absolute; display: block; content: '';
         border-left: 10px solid #718cf3;
         height: 100%; width: 100%;
-        box-sizing: border-box;}
-
+        box-sizing: border-box;
+      }
       div.border2 {
         border-left: 20px solid #52c5f1;
         border-radius: 0%;
-        position: relative;}
-
+        position: relative;
+      }
       div.border2:before {
         position: absolute; display: block; content: '';
         border-left: 10px solid #7090f3;
         height: 100%; width: 100%;
-        box-sizing: border-box;}
-
+        box-sizing: border-box;
+      }
       div.border3 {
         border-left: 20px solid #d353f0;
         border-radius: 0%;
-        position: relative;}
-
+        position: relative;
+      }
       div.border3:before {
         position: absolute; display: block; content: '';
         border-left: 10px solid #f4de71;
         height: 100%; width: 100%;
-        box-sizing: border-box;}
-
+        box-sizing: border-box;
+      }
       div.border4 {
         border-left: 20px solid #8553f2;
         border-radius: 0%;
-        position: relative;}
-
+        position: relative;
+      }
       div.border4:before {
         position: absolute; display: block; content: '';
         border-left: 10px solid #718cf3;
         height: 100%; width: 100%;
-        box-sizing: border-box;}
-
-      .bottom1 {
-        margin-top:350px;
-        background: url(bottom.png);
+        box-sizing: border-box;
+      }
+      .dev .row {
+        outline: 3px solid red
+      }
+      .dev [class^="col-"] {
+        outline: 3px solid blue;
+      }
+      .wave {
+        position: relative;
+        min-height: 867px;
+      }
+      .hero-section::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        max-width: 900px;
+        background-image: url(./images/audi.png);
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 600px;}
-
+        background-size: 100% auto;
+        background-position: center 30%;
+                z-index: 0;
+      }
     </style>
 
 
   </head>
-  <body>
+  <body class="dev">
 
-
-    <section class="wave">
-      <div class="container-fluid">
-
-      <!--NAVBAR-->
-        <div class="navbar navbar-light pt-5 ">
-          <div class="col-1"></div>
-          <div class="pl-5 col-2" style="margin-left: 50px;">
-            <a class="navbar-brand" href="#">
-              <img src="brand2.jpg" width="50" height="50" alt="" class= "logo">
-            </a>
-          </div>
-          <div class="pl-5 col-6">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vehicle loans</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">others Loans</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Location</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">How it works</a>
-              </li>
-            </ul>
+    <!-- DECORATIVE BACKGROUND ´wave´ -->
+    <div class="container-fluid wave hero-section">
+      <!--FIRST SECTION ' navigation '-->
+      <section class="container">
+        <!--FIRST ROW: LOGO & MENU -->
+        <div class="row navbar navbar-light pt-5">
+            <div class="col-3">
+              <!-- LOGO -->
+              <a class="navbar-brand" href="#">
+                <img src="./images/brand2.jpg" width="50" height="50" alt="" class= "logo">
+              </a>
+            </div>
+            <div class="col-8">
+              <!-- NAVBAR-->
+              <ul class="nav float-right">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vehicle loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">others Loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">How it works</a>
+                </li>
+              </ul>
           </div>
         </div>
-      </div>
-
-
-
-
-
-
-
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class= "pt-5 tex-white col-5">
-            Turn Your Vehicle <br> into Cash!
-          </div>
-        </div>
-      </div>
-
-      <div class="">
-        <div class="" style="height: 500px; margin-left: 480px;">
-          <div class="col-3"></div>
-          <div class= "pt-5 tex-white2 col-3">
-            Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!
-          </div>
-          <div class="" style="margin-top:-200px; margin-left:-400px;">
-            <img src="audi.png" class= "w-50 float-right">
-          </div>
-          <div>
-            <button type="button" class="button1 btn btn-primary btn-lg" style="margin-left:-4px;">Apply Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-      <div class="col-8" style="margin-top:-280px; margin-left:-30px;">
-        <div class="" style="font-size: 80px; font-weight:bold; padding-left: 500px;">
-          2000+
-        </div>
-        <div style="font-size: 30px; font-weight:bold; padding-left: 500px;">
-          Happy customers
-        </div>
-        <div class="persons">
-          <img src="persons.jpg"  class= "" style="margin-left:380px; margin-top:-110px; width:500px;">
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-      <div class="form1 col-3 " style="margin-top:-590px; margin-left:1000px; background: white; border-radius: 25% 10% 10% 10%; width:500px; box-shadow: 17px 14px 50px 0px rgba(0,0,0,0.24);">
-        <form style="padding-left: 50px; padding-top: 5px;">
-          <div class="font-weight-bold" style="font-size: 24px; margin-left: 34px; margin-top: 60px;">
-            How much<a style="color:#7f45f1;"> cash can i get?</a>
-          </div>
-          <div class="form-group row pt-5">
-            <div class="col-10">
-              <input type="name" class="form-control" id="inputEmail3" placeholder="Name" style="width:370px; height:60px; background-color: #ebebeb;">
-            </div>
-          </div>
-          <div class="form-group row pt-2">
-            <div class="col-10">
-              <input type="email" class="form-control" id="inputPassword3" placeholder="E-mail" style="width:370px; height:60px; background-color: #ebebeb;">
-            </div>
-          </div>
-          <div class="form-group row pt-2">
-            <div class="col-5">
-              <input type="email" class="form-control" id="inputPassword3" placeholder="Make" style="width:180px; height:60px; background-color: #ebebeb;">
-            </div>
-            <div class="col-5 pl-4">
-              <input type="email" class="form-control" id="inputPassword3" placeholder="Model" style="width:180px; height:60px; background-color: #ebebeb;">
-            </div>
-          </div>
-          <fieldset class="form-group row pt-2">
-              <div class="col-sm-12">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Brisbane</label>
-                </div>
-                <div class="form-check form-check-inline" style="margin-left: 45px;">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Gold Coast</label>
-                </div>
-                <div class="form-check form-check-inline" style="margin-left: 45px;">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                  <label class="form-check-label" for="inlineRadio3">Sydney</label>
-                </div>
-              </div>
-          </fieldset>
-          <div class="form-group row pb-5">
-            <div class="col-sm-10">
-              <button type="button" class="button2 btn btn-primary btn-lg">Free Evaluation</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
-
-      <section class="wavegreen">
-
-        <div class="row col-3" style="margin-left: 450px;">
-
-          <div style="color:#7f45f1; font-size: 35px; font-weight:bold; margin-top: 200px;">
-            4 steps & <br>30 mins away!
-          </div>
-
-          <div style=" color:#A49CB1; margin-top:50px;">
-            If you find yourself in need of a short term <br>loan of money, or small loan perhaps as a<br> stopga until others funds come in, Hock Your <br> Ride car pawnbrokers can help to borrow <br>money against your car.
-            Our Brisbane, <br> Sydney or Gold Coast pawn shops are open 7 <br>days a week, serving bussinesse and <br>individuals looking for no credit check cash <br> loans.
-          </div>
-
-        </div>
-        <div class="row" style="margin-left: 850px; margin-top:-530px;">
-
-
-          <div class="card border1" style="width: 19.5rem; height:25rem; background: white; box-shadow: 0px 42px 67px -7px rgba(0,0,0,0.44);">
-            <img src="10.png" class="card-img-top" style="width:70px; height:70px; margin-left:195px; margin-top: 30px;margin">
-          <div class="card-body" style="background: white;">
-              <p>Step 01</p>
-              <h5 class="card-title">Contact us</h5>
-              <p class="card-text">Call our Fast Cash Hotline/or Visit <br>our Gold Coast Pawn Shop or our <br>Brisbane Pawn Shop</p>
-                  <button type="button" href=""class="btn" style="background:#f5f1ff; color: #c5adf9; font-weight:bold; font-size: 40px; width:80px; height:70px; margin-left: 165px; margin-top: 20px;" >></button>
-            </div>
-          </div>
-
-
-            <div class="card border2" style="width: 19.5rem; height:25rem; margin-top: 100px; margin-left: 25px; box-shadow: 0px 42px 67px -7px rgba(0,0,0,0.44);">
-              <img src="11.png" class="card-img-top" style="width:70px; height:70px; margin-left:195px; margin-top: 30px;">
-            <div class="card-body" style="background: white;">
-                <p>Step 03</p>
-                <h5 class="card-title">Verification</h5>
-                <p class="card-text">Instant cash loans up to 60% of the <br> asset´s value</p>
-                    <button type="button" href=""class="btn" style="background:#effaff; color: #abe4f8; font-weight:bold; font-size: 40px; width:80px; height:70px; margin-left: 165px; margin-top: 45px;" >></button>
-              </div>
-            </div>
-
-
-
-        </div>
-
-
-        <div class="row" style="margin-top: -75px; margin-left: 850px; ">
-
-
-          <div class="card border3" style="width: 19.5rem; height:25rem;box-shadow: 0px 42px 67px -7px rgba(0,0,0,0.44);">
-            <img src="12.png" class="card-img-top" style="width:90px; height:70px; margin-left:175px; margin-top: 30px;">
-          <div class="card-body" style="background: white;">
-              <p>Step 02</p>
-              <h5 class="card-title">Bring ID</h5>
-              <p class="card-text">Call our Fast Cash Hotline/or Visit <br>our Gold Coast Pawn Shop or our <br>Brisbane Pawn Shop</p>
-                  <button type="button" href=""class="btn" style="background:#faeffd; color: #e9abf8; font-weight:bold; font-size: 40px; width:80px; height:70px; margin-left: 165px; margin-top: 20px;" >></button>
-            </div>
-          </div>
-
-
-          <div class="card border4" style="width: 19.5rem; height:25rem; margin-top: 100px; margin-left: 25px; box-shadow: 0px 42px 67px -7px rgba(0,0,0,0.44);">
-            <img src="13.jpg" class="card-img-top" style="width:70px; height:70px; margin-left:195px; margin-top: 30px;">
-          <div class="card-body" style="background: white;">
-              <p>Step 04</p>
-              <h5 class="card-title">Collect your &&</h5>
-              <p class="card-text">Instant cash loans up to 60% of the<br>asset´s value</p>
-                  <button type="button" href=""class="btn" style="background:#f5f1ff; color: #c5adf9; font-weight:bold; font-size: 40px; width:80px; height:70px; margin-left: 165px; margin-top: 45px;" >></button>
-            </div>
-          </div>
-
-        </div>
-
       </section>
 
-
-      <div class="col pt-5" style="font-size: 45px; color: #8553f2; font-weight: bold; text-align:center;">
-
-      Turn Your Assets Into Fast Instant Cash
-      </div>
-
-      <div class="col pt-3" style="font-size: 18px; color: #A49CB1; text-align:center;">
-          We offer loans against vehicles & a wide range of assets.
-      </div>
-
-
-      <div class="row" style="margin-top:150px; margin-left: 300px;">
-        <div class="media col-6">
-          <img src="20.png" style=" margin-left:80px; border-radius:100%; width:120px; box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
-          <div class="media-body" style="margin-left:50px;">
-          <h5 class="mt-0">Car Loan</h5>
-          Hook your vehicule with us to receive on-the-spot <br>cash loans, whit the BEST RATES and most <br> flexible terms.
+      <!--SECOND SECTION ' Call to action '-->
+      <section class="container">
+        <div class="row text-white pt-5">
+          <div class="col-6">
+            <h1>Turn Your Vehicle <br> into Cash!</h1>
+            <p>
+              Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="media col-6" style="margin-left:-120px;">
-          <img src="21.png" class="" style="border-radius:100%; width:120px; box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
-          <div class="media-body" style="margin-left:50px;">
-          <h5 class="mt-0">Motorbike Loan</h5>
-          Your motorcicle is another asset can be <br> pawnedfor a cash loan. All types of motorcycles <br>are welcome.
-          </div>
-        </div>
-
-      </div>
-
-        <div class="row" style="margin-left:300px;">
-        <div class="media col-6" style="margin-top:80px;">
-          <img src="22.png" style="margin-left:80px; border-radius:100%; width:120px; box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
-          <div class="media-body" style="margin-left:50px;">
-          <h5 class="mt-0">Boat Loan</h5>
-          If you´re not using your boat on the water <br> regularly, call us instead and use it to raise a <br> short term loan. Any size is welcomed from a <br>Tinny to Cruiser.
-          </div>
-        </div>
-
-        <div class="media col-6" style="margin-top:80px; margin-left:-120px;">
-          <img src="23.png" class="" style="border-radius:100%; width:120px; box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);" >
-          <div class="media-body" style="margin-left:50px;">
-          <h5 class="mt-0">Truck Loan</h5>
-          We lend most against types of trucks. Big <br>or small. Call us to find out more!
-          </div>
-      </div>
     </div>
-
-    <div class="bottom1" style="margin-top: 450px;">
-      <div></div>
-      <div class= "col-3" style="font-size: 45px; color: #8553f2; font-weight: bold; margin-left: 500px; padding-top:-150px;">
-        We Loans Cash Fast <br> Against Your Ride.
-      </div>
-      <div>
-        <button type="button" class="button1 btn btn-primary btn-lg" style="margin-left:500px; margin-top: -40px;">Apply Now</button>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- END: DECORATIVE BACKGROUND´wave´ -->
 
 
 
