@@ -20,6 +20,7 @@
       .wave {
         position: relative;
         background: linear-gradient(90deg, #a884f0, #661df7);
+        min-height: 1100px;
 
       }
       .wave:before {
@@ -48,15 +49,15 @@
       .navbar-brand .logo {
         border-radius: 100%;
       }
-      .tex-white {
+      .text-white {
         letter-spacing: 0.05em;
         line-height: 1em;
-        font-size: 80px;
+        font-size: 65px;
         font-family: calibri;
         color:#fff;
         font-weight: bold;
       }
-      .tex-white2 {
+      .text-white2 {
         line-height: 1.5em;
         font-size: 26px;
         font-family: calibri;
@@ -91,7 +92,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 800px;
+        height: 1000px;
       }
       div.border1 {
         border-left: 20px solid #8553f2;
@@ -149,6 +150,12 @@
         height: 100%; width: 100%;
         box-sizing: border-box;
       }
+      .form1 {
+        background: white;
+        border-radius: 25% 10% 10% 10%;
+        width:500px;
+        box-shadow: 17px 14px 50px 0px rgba(0,0,0,0.24);
+      }
       /*
       .dev .row {
         outline: 3px solid red
@@ -157,10 +164,6 @@
         outline: 3px solid blue;
       }
       */
-      .wave {
-        position: relative;
-        min-height: 867px;
-      }
       .hero-section::after {
         content: "";
         position: absolute;
@@ -173,8 +176,17 @@
         background-image: url(./images/audi.png);
         background-repeat: no-repeat;
         background-size: 100% auto;
-        background-position: center 40%;
+        background-position: center 30%;
         z-index: 0;
+      }
+      .form-control{
+        background-color: #ebebeb;
+      }
+      .test{
+        margin-top: -250px;
+      }
+      .people{
+        width: 87%;
       }
     </style>
 
@@ -217,80 +229,96 @@
       </section>
       <!--SECOND SECTION ' Call to action '-->
       <section class="container">
-        <div class="row text-white pt-5">
+        <div class="row pt-5">
           <div class="col-6">
-            <h1>Turn Your Vehicle <br> into Cash!</h1>
-            <p>
-              Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!
-            </p>
+            <div class="text-white">
+              <div>Turn Your Vehicle <br> into Cash!</div>
+            </div>
+            <div class="text-white2 mt-5">
+              <div>Cash Loans No Credit Checks, <br> Pawn Your Cars In Minutes!</div>
+            </div>
           </div>
         </div>
       </section>
     </div>
     <!-- END: DECORATIVE BACKGROUND´wave´ -->
     <!--WHITE BACKGROUND -->
-    <div class="container-fluid">
+    <div class="container-fluid test">
       <!--SECTION ' test vehicle ' -->
       <div class="container">
         <div class="row">
           <!--INFLUENCES -->
           <div class="col-6">
-            <div class="" style="font-size: 80px; font-weight:bold;">
+            <div class="font-weight-bold" style="font-size: 80px;">
               2000+
             </div>
-            <div class=""style="font-size: 30px; font-weight:bold;">
+            <div class="font-weight-bold"style="font-size: 30px;">
               Happy customers
             </div>
             <!--HAPPY PEOPLE ART -->
-            <div class="persons">
-              <img src="./images/persons.jpg"  class= "" style="width:80%;">
+            <div class="">
+              <img src="./images/persons.jpg" class="people mt-5" style="">
             </div>
           </div>
           <!--FORM VEHICLE -->
           <div class="col-6">
-            <div class="form1" style="background: white; border-radius: 25% 10% 10% 10%; width:500px; box-shadow: 17px 14px 50px 0px rgba(0,0,0,0.24);">
+            <div class="form1" style="">
               <form style="">
-                <div class="font-weight-bold" style="font-size: 24px;">
-                  How much<a style="color:#7f45f1;"> cash can i get?</a>
+                <div class="font-weight-bold row" style="font-size: 24px;">
+                  <div class="col-2"></div>
+                  <div class="col-8 mt-5">
+                    How much<a style="color:#7f45f1;"> cash can i get?</a>
+                  </div>
+                  <div class="col-2"></div>
                 </div>
                 <div class="form-group row pt-5">
+                  <div class="col"></div>
                   <div class="col-10">
-                    <input type="name" class="form-control" id="inputEmail3" placeholder="Name" style="background-color: #ebebeb;">
+                    <input class="form-control" placeholder="Name" style="">
                   </div>
+                  <div class="col"></div>
                 </div>
                 <div class="form-group row pt-2">
+                  <div class="col"></div>
                   <div class="col-10">
-                    <input type="email" class="form-control" id="inputPassword3" placeholder="E-mail" style="background-color: #ebebeb;">
+                    <input class="form-control" placeholder="E-mail" style="">
                   </div>
+                  <div class="col"></div>
                 </div>
                 <div class="form-group row pt-2">
+                  <div class="col"></div>
                   <div class="col-5">
-                    <input type="email" class="form-control" id="inputPassword3" placeholder="Make" style="background-color: #ebebeb;">
+                    <input class="form-control" placeholder="Make" style="">
                   </div>
                   <div class="col-5 pl-4">
-                    <input type="email" class="form-control" id="inputPassword3" placeholder="Model" style="background-color: #ebebeb;">
+                    <input class="form-control" placeholder="Model" style="">
                   </div>
+                  <div class="col"></div>
                 </div>
-                <fieldset class="form-group row pt-2">
-                  <div class="col-sm-12">
+                <div class="form-group row pt-2">
+                  <div class="col-2"></div>
+                  <div class="col-8 pl-4 pt-3">
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <input class="form-check-input" type="radio">
                       <label class="form-check-label" for="inlineRadio1">Brisbane</label>
                     </div>
                     <div class="form-check form-check-inline" style="">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <input class="form-check-input" type="radio">
                       <label class="form-check-label" for="inlineRadio2">Gold Coast</label>
                     </div>
                     <div class="form-check form-check-inline" style="">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <input class="form-check-input" type="radio">
                       <label class="form-check-label" for="inlineRadio3">Sydney</label>
                     </div>
                   </div>
-                </fieldset>
-                <div class="form-group row pb-5">
-                  <div class="col-sm-10">
-                    <button type="button" class="btn btn-primary btn-lg">Free Evaluation</button>
+                  <div class="col-2"></div>
+                </div>
+                <div class="form-group row pb-5 pl-3 pt-5 mx-auto">
+                  <div class="col-3"></div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-lg rounded-pill">Free Evaluation</button>
                   </div>
+                  <div class="col-3"></div>
                 </div>
               </form>
             </div>
@@ -300,14 +328,14 @@
       <!--END SECTION ' test vehicle ' -->
     </div>
     <!--BACKGROUND WAVEGREEN -->
-    <section class="container-fluid wavegreen">
+    <section class="container-fluid wavegreen mb-5">
       <div class="container">
         <!--STEPS TO MONEY -->
         <div class="row">
           <!--INFO STEPS IN COL-4-->
           <div class="col-4 align-self-center">
             <div class="row">
-              <div style="color:#7f45f1; font-size: 35px; font-weight:bold;">
+              <div class="font-weight-bold" style="color:#7f45f1; font-size: 35px;">
                 4 steps & <br>30 mins away!
               </div>
             </div>
@@ -322,23 +350,23 @@
           <div class="col-4">
             <div class="row">
               <div class="border1" style="">
-                <img src="./images/10.png" class="w-25 float-right" style="">
+                <img src="./images/10.png" class="w-25 float-right mr-3 mt-3" style="">
                 <div class="card-body pt-5" style="">
                   <p>Step 01</p>
                   <h5 class="card-title">Contact us</h5>
                   <p class="card-text">Call our Fast Cash Hotline/or Visit <br>our Gold Coast Pawn Shop or our <br>Brisbane Pawn Shop</p>
-                  <button type="button" href=""class="btn" style="background:#f5f1ff; color: #c5adf9; font-weight:bold; font-size: 40px;" >></button>
+                  <button type="button" href=""class="btn font-weight-bold" style="background:#f5f1ff; color: #c5adf9; font-size: 40px;" >></button>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="border3 mt-5" style="">
-                <img src="./images/12.png" class="w-25 float-right" style="">
+                <img src="./images/12.png" class="w-25 float-right mr-3 mt-3" style="">
                 <div class="card-body pt-5" style="">
                   <p>Step 02</p>
                   <h5 class="card-title">Bring ID</h5>
                   <p class="card-text">Call our Fast Cash Hotline/or Visit <br>our Gold Coast Pawn Shop or our <br>Brisbane Pawn Shop</p>
-                  <button type="button" href=""class="btn" style="background:#faeffd; color: #e9abf8; font-weight:bold; font-size: 40px;" >></button>
+                  <button type="button" href=""class="btn font-weight-bold" style="background:#faeffd; color: #e9abf8; font-weight:bold; font-size: 40px;" >></button>
                 </div>
               </div>
             </div>
@@ -347,23 +375,23 @@
           <div class="col-4">
             <div class="row">
               <div class="border2 mt-5" style="">
-                <img src="./images/11.png" class="w-25 float-right" style="">
+                <img src="./images/11.png" class="w-25 float-right mr-3 mt-3" style="">
                 <div class="card-body pt-5" style="">
                   <p>Step 03</p>
                   <h5 class="card-title">Verification</h5>
                   <p class="card-text">Instant cash loans up to 60% of the <br> asset´s value</p>
-                  <button type="button" href=""class="btn" style="background:#effaff; color: #abe4f8; font-weight:bold; font-size: 40px;" >></button>
+                  <button type="button" href=""class="btn font-weight-bold" style="background:#effaff; color: #abe4f8; font-size: 40px;" >></button>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="border4 mt-5" style="">
-                <img src="./images/13.jpg" class="w-25 float-right" style="">
+                <img src="./images/13.jpg" class="w-25 float-right mr-3 mt-3" style="">
               <div class="card-body pt-5" style="">
                 <p>Step 04</p>
                 <h5 class="card-title">Collect your &&</h5>
                 <p class="card-text">Instant cash loans up to 60% of the<br>asset´s value</p>
-                <button type="button" href=""class="btn" style="background:#f5f1ff; color: #c5adf9; font-weight:bold; font-size: 40px;" >></button>
+                <button type="button" href=""class="btn font-weight-bold" style="background:#f5f1ff; color: #c5adf9; font-size: 40px;" >></button>
               </div>
               </div>
             </div>
@@ -377,17 +405,17 @@
       <div class="container">
         <div class="row">
           <div class="col"></div>
-          <div class="col-10 pt-5" style="font-size: 45px; color: #8553f2; font-weight: bold; text-align:center;">
+          <div class="col-10 mt-5" style="font-size: 45px; color: #8553f2; font-weight: bold; text-align:center;">
             Turn Your Assets Into Fast Instant Cash
           </div>
           <div class="col"></div>
         </div>
         <div class="row">
           <div class="col"></div>
-          <div class="col-10 pt-3" style="font-size: 18px; color: #A49CB1; text-align:center;">
+          <div class="col-10 mt-3" style="font-size: 18px; color: #A49CB1; text-align:center;">
             We offer loans against vehicles & a wide range of assets.
           </div>
-          <div class="col"></div>
+          <div class="col mt-5 mb-5"></div>
         </div>
       </div>
     </div>
@@ -401,7 +429,7 @@
             <div class="row"></div>
               <!--CAR CARD-->
               <div class="media">
-                <img src="./images/20.png" class="w-25" style="border-radius:100%;box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
+                <img src="./images/20.png" class="w-25 rounded-circle" style="box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
                 <div class="media-body ml-4" style="">
                   <h5 class="mt-0">Car Loan</h5>
                   Hook your vehicule with us to receive on-the-spot <br>cash loans, whit the BEST RATES and most <br> flexible terms.
@@ -410,8 +438,8 @@
             <div class="row">
               <!--BOAT CARD-->
               <div class="media" style="">
-                <img src="./images/22.png" class="w-25" style="border-radius:100%;box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
-                <div class="media-body" style="">
+                <img src="./images/22.png" class="w-25 rounded-circle" style="box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
+                <div class="media-body ml-4" style="">
                   <h5 class="mt-0">Boat Loan</h5>
                   If you´re not using your boat on the water <br> regularly, call us instead and use it to raise a <br> short term loan. Any size is welcomed from a <br>Tinny to Cruiser.
                 </div>
@@ -423,8 +451,8 @@
             <div class="row">
               <!--MOTORBIKE CARD-->
               <div class="media" style="">
-                <img src="./images/21.png" class="w-25" style="border-radius:100%;box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
-                <div class="media-body" style="">
+                <img src="./images/21.png" class="w-25 rounded-circle" style="box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);">
+                <div class="media-body ml-4" style="">
                   <h5 class="mt-0">Motorbike Loan</h5>
                   Your motorcicle is another asset can be <br> pawnedfor a cash loan. All types of motorcycles <br>are welcome.
                 </div>
@@ -433,8 +461,8 @@
             <div class="row">
               <!--TRUCK CARD-->
               <div class="media" style="">
-                <img src="./images/23.png" class="w-25" style="border-radius:100%;box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);" >
-                <div class="media-body" style="">
+                <img src="./images/23.png" class="w-25 rounded-circle" style="box-shadow: 0px 42px 104px -5px rgba(0,0,0,0.75);" >
+                <div class="media-body ml-4" style="">
                   <h5 class="mt-0">Truck Loan</h5>
                   We lend most against types of trucks. Big <br>or small. Call us to find out more!
                 </div>
